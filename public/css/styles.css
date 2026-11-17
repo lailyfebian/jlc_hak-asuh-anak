@@ -6742,7 +6742,7 @@ section {
     }
 
     .jlc-editorial-intro__heading h2 {
-        font-size: 24px;
+        font-size: 24px !important;
         line-height: 1.08;
     }
 
