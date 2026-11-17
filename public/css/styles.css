@@ -65,41 +65,7 @@ section {
     max-width: 1280px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--primary);
-    line-height: 1.15;
-    font-weight: 700;
-}
 
-h1 {
-    font-size: 72px;
-}
-
-h2 {
-    font-size: 56px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-h4 {
-    font-size: 30px;
-}
-
-h5 {
-    font-size: 22px;
-}
-
-p {
-    color: var(--gray);
-    margin-bottom: 0;
-}
 
 .text-gold {
     color: var(--secondary);
@@ -396,10 +362,10 @@ p {
 /* Heading */
 
 .hero-content h1 {
-    max-width: 700px;
+    max-width: 800px;
 
-    font-family: 'Playfair Display', serif;
-    font-size: 62px !important;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px !important;
     font-weight: 800;
     line-height: 1.08;
     letter-spacing: -1px;
@@ -655,7 +621,7 @@ p {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(5, 18, 38, 0.78);
+        /*background: rgba(5, 18, 38, 0.78);*/
         z-index: -1;
         pointer-events: none;
     }
@@ -718,38 +684,38 @@ p {
 
 @media (max-width: 767px) {
 
-.hero-section {
-    position: relative;
-    isolation: isolate;
-    padding: 45px 0 55px;
-    background: var(--primary);
-    color: #fff;
-}
+    .hero-section {
+        position: relative;
+        isolation: isolate;
+        padding: 45px 0 55px;
+        background: var(--primary);
+        color: #fff;
+    }
 
-/* Gambar di bawah teks */
-.hero-section::after {
-    content: "";
-    display: block;
-    width: calc(100% - 30px);
-    height: 300px;
-    margin: 0 auto;
+    /* Gambar di bawah teks */
+    .hero-section::after {
+        content: "";
+        display: block;
+        width: calc(100% - 30px);
+        height: 300px;
+        margin: 0 auto;
 
-    background: url("../images/background-hero-mobile.png")
-                center center / cover no-repeat;
+        background: url("../images/background-hero-mobile.png")
+                    center center / cover no-repeat;
 
-    border-radius: 12px;
-    margin-top: 30px;
-}
+        border-radius: 12px;
+        margin-top: 30px;
+    }
 
-/* Hilangkan dekorasi background lama */
-.hero-section::before {
-    display: none;
-}
-.hero-content {
-    position: relative;
-    z-index: 1;
-    animation: fadeUp 0.9s ease;
-}
+    /* Hilangkan dekorasi background lama */
+    .hero-section::before {
+        display: none;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        animation: fadeUp 0.9s ease;
+    }
 
     .hero-badge {
         gap: 8px;
@@ -768,7 +734,7 @@ p {
     }
 
     .hero-content h1 {
-        font-size: clamp(30px, 8vw, 42px) !important;
+        font-size: 20px !important;
         line-height: 1.15;
         letter-spacing: -0.5px;
 
@@ -784,17 +750,18 @@ p {
         align-self: center;
     }
     .hero-content p {
-        font-size: 14px;
+        font-size: 13px !important;
         line-height: 1.75;
         color: #fff;
         margin-bottom: 16px;
 
     }
     .hero-content p strong,
-.hero-content p b {
-    color: #fff;
-    font-weight: 700;
-}
+    .hero-content p b {
+        color: #fff;
+        font-weight: 700;
+        font-size: 13px !important;
+    }
 
     /* Consultation Box */
 
@@ -830,7 +797,7 @@ p {
     }
 
     .hero-consultation-text p {
-        font-size: 12px;
+        font-size: 13px !important;
         line-height: 1.6;
         color: #fff;
     }
@@ -872,7 +839,7 @@ p {
 @media (max-width: 380px) {
 
     .hero-content h1 {
-        font-size: 29px !important;
+        font-size: 20px;
     }
 
     .hero-consultation-box {
@@ -898,7 +865,7 @@ p {
     }
 
     .hero-consultation-text p {
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 
@@ -965,8 +932,9 @@ p {
 }
 
 .feature-item .feature-subtitle {
-    font-size: 20px;
-    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 900;
     margin-bottom: 10px;
     color: var(--primary);
 }
@@ -1216,6 +1184,11 @@ p {
         height: 64px;
         font-size: 26px;
     }
+
+    .feature-subtitle {
+        font-size: 20px;
+        font-weight: 900;
+    }
 }
 
 @media (max-width:576px) {
@@ -1401,16 +1374,18 @@ p {
 .jlc-about-title {
     margin: 0 0 25px;
     color: #102544;
-    font-size: 38px;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -.8px;
 }
 
 .jlc-about-description p {
+    font-family: 'Inter', serif !important;
     margin: 0 0 17px;
     color: #687587;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.9;
 }
 
@@ -1614,9 +1589,10 @@ p {
     max-width: 550px;
     margin: 0;
     color: #ffffff;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.45;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* BUTTON */
@@ -1685,12 +1661,12 @@ p {
         gap: 40px;
     }
 
-    .jlc-about-title {
-        font-size: 31px;
+    /*.jlc-about-title {
+        font-size: 10px;
     }
-
+*/
     .jlc-about-description p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .jlc-about-image-frame {
@@ -1727,7 +1703,8 @@ p {
     }
 
     .jlc-cta-text h3 {
-        font-size: 21px;
+        font-size: 18px;
+        font-weight: 900;
     }
 
 }
@@ -1755,14 +1732,14 @@ p {
 
     .jlc-about-title {
         margin-bottom: 19px;
-        font-size: 30px;
+        font-size: 24px !important;
         line-height: 1.35;
         letter-spacing: -.5px;
     }
 
     .jlc-about-description p {
         margin-bottom: 14px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.85;
     }
 
@@ -2149,17 +2126,19 @@ p {
 }
 
 .jlc-document-content h3 {
+    font-family: 'Cormorant Garamond', serif;
     margin: 0 0 10px;
     color: #102544;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 900;
     line-height: 1.4;
 }
 
 .jlc-document-content p {
+    font-family: 'Inter', serif;
     margin: 0;
     color: #727d8b;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.85;
 }
@@ -2225,15 +2204,15 @@ p {
 
     .jlc-document-intro h2 {
         margin-bottom: 18px;
-        font-size: 29px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 800;
         line-height: 1.35;
         letter-spacing: -0.5px;
     }
 
     .jlc-document-intro p {
         margin-bottom: 14px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.85;
     }
 
@@ -2267,14 +2246,14 @@ p {
 
     .jlc-document-content h3 {
         margin-bottom: 9px;
-        font-size: 17px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 900;
         line-height: 1.45;
         letter-spacing: -0.3px;
     }
 
     .jlc-document-content p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.8;
     }
 }
@@ -2349,7 +2328,8 @@ p {
 .jlc-team-editorial-heading h2 {
     margin: 0;
     color: #ffffff;
-    font-size: 65px;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -2px;
@@ -2405,9 +2385,10 @@ p {
 }
 
 .jlc-team-editorial-content p {
+    font-family: 'Inter', serif !important;
     margin: 0 0 17px;
     color: rgba(255,255,255,.76);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.9;
 }
 
@@ -2493,7 +2474,7 @@ p {
     }
 
     .jlc-team-editorial-heading h2 {
-        font-size: 48px;
+        font-size: 24px;
         letter-spacing: -1.5px;
     }
 
@@ -2511,7 +2492,7 @@ p {
     }
 
     .jlc-team-editorial-content p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.85;
     }
 
@@ -2617,9 +2598,10 @@ p {
 }
 
 .jlc-women-heading {
+    font-family: 'Georgia', serif !important;
     margin: 0 0 23px;
     color: #102544;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -2633,7 +2615,7 @@ p {
 .jlc-women-description p {
     margin: 0 0 13px;
     color: #687587;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.85;
 }
 
@@ -2673,10 +2655,11 @@ p {
 }
 
 .jlc-women-feature-content h3 {
+    font-family: 'Cormorant Garamond', serif;
     margin: 0 0 8px;
     color: #102544;
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 900;
     line-height: 1.4;
 }
 
@@ -2759,12 +2742,12 @@ p {
 
     .jlc-women-heading {
         margin-bottom: 18px;
-        font-size: 27px;
+        font-size: 24px;
         line-height: 1.3;
     }
 
     .jlc-women-description p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.8;
     }
 
@@ -2784,8 +2767,9 @@ p {
 
     .jlc-women-feature-content h3 {
         margin-bottom: 6px;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 1.4;
+        font-weight: 900;
     }
 
     .jlc-women-feature-content p {
@@ -2854,8 +2838,9 @@ p {
 }
 
 .layanan-hero__content h2 {
+    font-family: 'Georgia', serif !important;
     color: #102544;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.7px;
@@ -2876,8 +2861,9 @@ p {
 }
 
 .layanan-hero__content p {
+    font-family: 'Inter', serif !important;
     color: #687587;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.85;
     margin: 0 0 16px;
@@ -2954,7 +2940,7 @@ p {
     }
 
     .layanan-hero__content h2 {
-        font-size: 27px;
+        font-size: 24px;
         line-height: 1.35;
     }
 
@@ -2963,7 +2949,7 @@ p {
     }
 
     .layanan-hero__content p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.8;
         margin-bottom: 14px;
     }
@@ -3028,6 +3014,7 @@ p {
 }
 
 .section-badge {
+    font-family: 'Inter', serif !important;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -3052,10 +3039,10 @@ p {
 .section-title {
     margin-bottom: 16px;
     color: #102544;
-    font-family: Georgia, serif;
-    font-size: 36px;
-    font-weight: 700;
     line-height: 1.3;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .section-title span,
@@ -3064,10 +3051,11 @@ p {
 }
 
 .section-description {
+    font-family: 'Inter', serif;
     max-width: 680px;
     margin: 0 auto;
     color: #727272;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -3161,12 +3149,12 @@ p {
 
 /* CARD TITLE */
 
-.service-top .services-title {
+.service-top .services-title  {
     margin: 0;
     color: #102544;
-    font-family: Georgia, serif;
-    font-size: 19px;
-    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 900;
     line-height: 1.4;
 }
 
@@ -3177,9 +3165,10 @@ p {
 /* CARD CONTENT */
 
 .service-card p {
+    font-family: 'Inter', serif;
     margin-bottom: 18px;
     color: #727272;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -3190,11 +3179,12 @@ p {
 }
 
 .service-card ul li {
+    font-family: 'Inter', serif;
     position: relative;
     padding-left: 23px;
     margin-bottom: 11px;
     color: #555f6d;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -3291,8 +3281,8 @@ p {
 .bottom-consultation__content h3 {
     margin: 0 0 10px;
     color: #102544;
-    font-family: Georgia, serif;
-    font-size: 21px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.4;
 }
@@ -3301,7 +3291,7 @@ p {
     max-width: 540px;
     margin: 0;
     color: #687587;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
 }
@@ -3458,8 +3448,9 @@ p {
         margin-bottom: 35px;
     }
 
-    .section-title {
-        font-size: 27px;
+    .section-title h2 {
+        font-size: 24px;
+        font-weight: 800;
     }
 
     .section-description {
@@ -3476,8 +3467,10 @@ p {
     }
 
     .service-top .services-title {
-        font-size: 17px;
+        font-size: 20px !important;
         line-height: 1.4;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 900;
     }
 
     .service-icon {
@@ -3698,9 +3691,10 @@ p {
 }
 
 .jlc-advantage-title {
+    font-family: 'Georgia', serif !important;
     margin-top: 18px;
     margin-bottom: 0;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
     color: #14213d;
@@ -3714,7 +3708,7 @@ p {
     max-width: 760px;
     margin: 18px auto 0;
     color: #6b7280;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -3779,6 +3773,7 @@ p {
 }
 
 .jlc-advantage-number {
+    font-family: 'Inter', serif;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -3795,9 +3790,9 @@ p {
 }
 
 .jlc-advantage-heading {
-    font-family: Georgia, serif;
-    font-size: 19px;
-    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px !important;
+    font-weight: 900;
     color: #14213d;
     line-height: 1.4;
     margin-bottom: 12px;
@@ -3806,7 +3801,7 @@ p {
 
 .jlc-advantage-text {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     color: #6b7280;
 }
@@ -3938,7 +3933,7 @@ p {
     }
 
     .jlc-advantage-title {
-        font-size: 27px;
+        font-size: 24px;
     }
 
     .jlc-advantage-subtitle {
@@ -3977,17 +3972,18 @@ p {
     }
 
     .jlc-advantage-heading {
-        font-size: 17px;
+        font-size: 20px !important;
         margin-bottom: 8px;
+        font-weight: 900;
     }
 
     .jlc-advantage-text {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.75;
     }
 
     .jlc-advantage-header > p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -4107,16 +4103,23 @@ p {
 }
 
 .team-section-2-title {
+    font-family: 'Georgia', serif !important;
     margin-top: 20px;
     margin-bottom: 22px;
     color: #14213d;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.15;
 }
 
 .team-section-2-title span {
     color: #c89a3c;
+}
+
+.team-section-2-heading{
+    font-size: 16px;
+    font-family: 'Inter', serif !important;
+    color: #6b7280;
 }
 
 .team-section-2-description {
@@ -4430,8 +4433,9 @@ p {
 }
 
 .cta-section-2-title {
+    font-family: 'Georgia', serif !important;
     color: #ffffff;
-    font-size: 56px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 20px;
@@ -4443,8 +4447,9 @@ p {
 }
 
 .cta-section-2-subtitle {
+    font-family: 'Inter', serif !important;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 30px;
 }
@@ -4468,11 +4473,12 @@ p {
 }
 
 .cta-section-2-list-item {
+    font-family: 'Inter', serif !important;
     display: flex;
     align-items: center;
     gap: 10px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -4487,32 +4493,35 @@ p {
 }
 
 .cta-section-2-description {
+    font-family: 'Inter', serif !important;
     color: rgba(255, 255, 255, .92);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     margin-bottom: 35px;
 }
 
 .cta-section-2-description p {
+    font-family: 'Inter', serif !important;
     color: rgba(255, 255, 255, .92);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     margin-bottom: 35px;
 }
 
 .cta-section-2-button {
-    display: inline-flex;
+    margin: 30px auto 0;
+    display: flex;
+    width: fit-content;
     align-items: center;
     gap: 15px;
-    background: linear-gradient(135deg,
-            #e1b04d,
-            #c7922d);
+    background: linear-gradient(135deg, #e1b04d, #c7922d);
     color: #14213d;
     font-weight: 700;
     text-decoration: none;
     border-radius: 14px;
     padding: 18px 30px;
     transition: .35s;
+    justify-content: center;
 }
 
 .cta-section-2-button:hover {
@@ -4627,15 +4636,15 @@ p {
     }
 
     .cta-section-2-subtitle {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .cta-section-2-description {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .cta-section-2-description p {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .cta-section-2-right {
@@ -4659,20 +4668,20 @@ p {
     }
 
     .cta-section-2-title {
-        font-size: 34px;
+        font-size: 24px;
     }
 
     .cta-section-2-subtitle {
-        font-size: 18px;
+        font-size: 13px;
     }
 
     .cta-section-2-description {
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.9;
     }
 
     .cta-section-2-description p {
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.9;
     }
 
@@ -4704,17 +4713,19 @@ p {
     }
 
     .cta-section-2-subtitle {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .cta-section-2-description {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .cta-section-2-description p {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
+
+
 
 /* ==========================
    FAQ SECTION
@@ -4759,8 +4770,8 @@ p {
 
 .faq-header h2 {
     color: #102e56;
-    font-family: Georgia, serif;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.08;
     margin-bottom: 15px;
@@ -4772,10 +4783,11 @@ p {
 }
 
 .faq-header p {
+    font-family: 'Inter', serif !important;
     max-width: 700px;
     margin: 0 auto;
     color: #526b91;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -4812,9 +4824,9 @@ p {
     background: rgba(255, 255, 255, 0.95);
     color: #102e56;
     box-shadow: none !important;
-    font-family: Georgia, serif;
-    font-size: 19px;
-    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 900;
     min-height: 72px;
 }
 
@@ -4876,6 +4888,7 @@ p {
 /* Accordion Body */
 
 .faq-wrapper .accordion-body {
+    font-family: 'Inter', serif;
     margin: 0 20px 15px;
     padding: 17px 35px;
     border-radius: 12px;
@@ -4916,7 +4929,8 @@ p {
     }
 
     .faq-wrapper .accordion-button {
-        font-size: 17px;
+        font-size: 20px;
+        font-weight: 900;
         gap: 18px;
     }
 }
@@ -4937,11 +4951,11 @@ p {
     }
 
     .faq-header h2 {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .faq-header p {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 10px;
     }
 
@@ -4952,7 +4966,8 @@ p {
     .faq-wrapper .accordion-button {
         padding: 14px 12px;
         gap: 12px;
-        font-size: 15px;
+        font-size: 20px;
+        font-weight: 900;
         min-height: 65px;
     }
 
@@ -4965,7 +4980,8 @@ p {
     .faq-wrapper .accordion-button::after {
         width: 32px;
         height: 32px;
-        font-size: 21px;
+        font-size: 20px;
+        font-weight: 900;
     }
 
     .faq-wrapper .accordion-body {
@@ -5246,6 +5262,17 @@ p {
     }
 }
 
+@media (max-width:991.98px){
+    .footer-widget h6 {
+        font-size: 20px;
+    }
+
+    .footer-desc{
+        font-size: 14px;
+    }
+
+}
+
 .floating-wa-mini {
     position: fixed;
     right: 25px;
@@ -5496,7 +5523,7 @@ p {
     align-items: center;
     gap: 18px;
     color: var(--secondary-dark);
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 7px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -5510,8 +5537,8 @@ p {
 
 .gallery-heading h2 {
     color: var(--primary);
-    font-family: Georgia, serif;
-    font-size: clamp(34px, 4vw, 55px);
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.13;
     margin-bottom: 15px;
@@ -5523,6 +5550,7 @@ p {
 }
 
 .gallery-heading p {
+    font-family: 'Intro', serif !important;
     max-width: 690px;
     margin: auto;
     color: #63718a;
@@ -5666,6 +5694,9 @@ p {
 /* Mobile */
 
 @media (max-width: 767px) {
+    .gallery-heading h2 {
+        font-size: 24px;
+    }
     .jlc-gallery-section {
         padding: 65px 0;
     }
@@ -5688,7 +5719,7 @@ p {
     }
 
     .gallery-heading p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -5744,6 +5775,7 @@ p {
 }
 
 .jlc-document-label {
+    font-family: 'Inter', serif !important;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -5765,8 +5797,8 @@ p {
     margin: 0 0 25px;
 
     color: #ffffff;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px !important;
     font-weight: 700;
     line-height: 1.22;
 }
@@ -5784,9 +5816,9 @@ p {
 
 .jlc-document-description p {
     margin: 0 0 17px;
-
+    font-family: 'Inter', serif !important;
     color: #dce4ef;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.85;
 }
 
@@ -5814,7 +5846,8 @@ p {
 .jlc-document-note p {
     margin: 0;
     color: #ffffff;
-    font-size: 14px;
+    font-family: 'Inter', serif !important;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.65;
 }
@@ -5889,7 +5922,7 @@ p {
 
 .jlc-document-number {
     color: #c89a3d;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     font-weight: 700;
 }
@@ -6011,15 +6044,16 @@ p {
         width: 24px;
     }
 
-    .jlc-document-intro h2 {
+    .jlc-document-layout  .jlc-document-intro h2 {
         margin-bottom: 19px;
-        font-size: 28px;
+        font-size: 24px !important;
+        font-family: 'Georgia', serif !important;
         line-height: 1.25;
     }
 
-    .jlc-document-description p {
+    .jlc-document-layout .jlc-document-description p {
         margin-bottom: 13px;
-        font-size: 14px;
+        font-size: 13px !important;
         line-height: 1.75;
     }
 
@@ -6072,7 +6106,8 @@ p {
 
     .jlc-document-card-content h3 {
         margin-bottom: 7px;
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 900;
         line-height: 1.4;
     }
 
@@ -6127,6 +6162,433 @@ p {
 
 
 /* =====================================
+   JLC LAWYER SECTION
+===================================== */
+
+.jlc-lawyer-section {
+    position: relative;
+    padding: 85px 0;
+    background: #f7f9fc;
+    overflow: hidden;
+}
+
+.jlc-lawyer-container {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    gap: 65px;
+    align-items: start;
+
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   LEFT CONTENT
+===================================== */
+
+.jlc-lawyer-intro {
+    position: relative;
+    padding: 42px 38px;
+    background: #102544;
+    border-radius: 4px 4px 55px 4px;
+    overflow: hidden;
+}
+
+.jlc-lawyer-intro::after {
+    content: "";
+    position: absolute;
+    right: -75px;
+    bottom: -100px;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.jlc-lawyer-label {
+    font-family: 'Inter', sans-serif !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 23px;
+    color: #d5ad60;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.jlc-lawyer-label span {
+    width: 30px;
+    height: 2px;
+    background: #c89a3d;
+}
+
+.jlc-lawyer-intro h2 {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-family: 'Georgia', serif !important;
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 1.22;
+}
+
+.jlc-lawyer-intro h2 span {
+    display: block;
+    margin-top: 8px;
+    color: #d5ad60;
+}
+
+.jlc-lawyer-description {
+    position: relative;
+    z-index: 1;
+}
+
+.jlc-lawyer-description p {
+    margin: 0 0 17px;
+    font-family: 'Inter', sans-serif !important;
+    color: #dce4ef;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.jlc-lawyer-note {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, .17);
+}
+
+.jlc-lawyer-note-line {
+    flex: 0 0 3px;
+    width: 3px;
+    height: 42px;
+    background: #c89a3d;
+}
+
+.jlc-lawyer-note p {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+
+/* =====================================
+   RIGHT FEATURES
+===================================== */
+
+.jlc-lawyer-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 0;
+}
+
+.jlc-lawyer-features-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 7px;
+}
+
+.jlc-lawyer-features-heading span {
+    flex-shrink: 0;
+    color: #b88625;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.jlc-lawyer-features-heading div {
+    width: 100%;
+    height: 1px;
+    background: #dce3ec;
+}
+
+
+/* =====================================
+   FEATURE CARD
+===================================== */
+
+.jlc-lawyer-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 25px 25px;
+    border: 1px solid #e5eaf0;
+    border-radius: 12px;
+    background: #ffffff;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.jlc-lawyer-card:hover {
+    transform: translateY(-3px);
+    border-color: #d9c08e;
+    box-shadow: 0 12px 28px rgba(16, 37, 68, .07);
+}
+
+
+/* CARD TOP */
+
+.jlc-lawyer-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.jlc-lawyer-number {
+    color: #c89a3d;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.jlc-lawyer-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background: #edf2f8;
+}
+
+.jlc-lawyer-card-icon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+
+/* CARD TEXT */
+
+.jlc-lawyer-card-content h3 {
+    margin: 0 0 9px;
+    color: #102544;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.35;
+}
+
+.jlc-lawyer-card-content p {
+    margin: 0;
+    color: #687587;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 991px) {
+
+    .jlc-lawyer-section {
+        padding: 65px 0;
+    }
+
+    .jlc-lawyer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        width: calc(100% - 40px);
+    }
+
+    .jlc-lawyer-intro {
+        padding: 30px 25px;
+    }
+
+    .jlc-lawyer-intro h2 {
+        font-size: 30px !important;
+    }
+
+    .jlc-lawyer-description p {
+        font-size: 14px;
+    }
+
+    .jlc-lawyer-note p {
+        font-size: 14px;
+    }
+
+    .jlc-lawyer-card {
+        padding: 19px;
+    }
+
+    .jlc-lawyer-card-content h3 {
+        font-size: 18px;
+    }
+
+    .jlc-lawyer-card-content p {
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 767px) {
+
+    .jlc-lawyer-section {
+        padding: 55px 0;
+    }
+
+    .jlc-lawyer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: calc(100% - 32px);
+    }
+
+    .jlc-lawyer-intro {
+        padding: 29px 24px;
+        border-radius: 4px 4px 38px 4px;
+    }
+
+    .jlc-lawyer-label {
+        gap: 10px;
+        margin-bottom: 17px;
+        font-size: 11px;
+    }
+
+    .jlc-lawyer-label span {
+        width: 24px;
+    }
+
+    .jlc-lawyer-intro h2 {
+        margin-bottom: 19px;
+        font-size: 20px !important;
+        font-family: 'Georgia', serif !important;
+        line-height: 1.25;
+    }
+
+    .jlc-lawyer-description p {
+        margin-bottom: 13px;
+        font-size: 13px !important;
+        line-height: 1.75;
+    }
+
+    .jlc-lawyer-note {
+        margin-top: 22px;
+        padding-top: 18px;
+    }
+
+    .jlc-lawyer-note p {
+        font-size: 13px;
+    }
+
+    .jlc-lawyer-features {
+        gap: 13px;
+    }
+
+    .jlc-lawyer-features-heading {
+        gap: 12px;
+        margin-bottom: 4px;
+    }
+
+    .jlc-lawyer-features-heading span {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .jlc-lawyer-card {
+        padding: 19px 18px 21px;
+        border-radius: 11px;
+    }
+
+    .jlc-lawyer-card-top {
+        margin-bottom: 13px;
+    }
+
+    .jlc-lawyer-number {
+        font-size: 22px;
+    }
+
+    .jlc-lawyer-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+
+    .jlc-lawyer-card-icon img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .jlc-lawyer-card-content h3 {
+        margin-bottom: 7px;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.4;
+    }
+
+    .jlc-lawyer-card-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 390px) {
+
+    .jlc-lawyer-container {
+        width: calc(100% - 28px);
+    }
+
+    .jlc-lawyer-intro {
+        padding: 25px 19px;
+    }
+
+    .jlc-lawyer-intro h2 {
+        font-size: 20px !important;
+    }
+
+    .jlc-lawyer-card {
+        padding: 17px 15px 19px;
+    }
+
+    .jlc-lawyer-card-content h3 {
+        font-size: 18px;
+    }
+
+    .jlc-lawyer-card-content p {
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .jlc-lawyer-card {
+        transition: none;
+    }
+}
+
+
+/* =====================================
    JLC EDITORIAL INTRO
 ===================================== */
 
@@ -6163,8 +6625,8 @@ p {
 .jlc-editorial-intro__heading h2 {
     margin: 0;
     color: #102544;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(52px, 6vw, 76px);
+    font-family: 'Georgia', serif !important;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.05;
 }
@@ -6221,9 +6683,10 @@ p {
 }
 
 .jlc-editorial-intro__paragraph p {
+    font-family: 'Inter', serif !important;
     margin: 0;
     color: #687587;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.9;
 }
 
@@ -6279,7 +6742,7 @@ p {
     }
 
     .jlc-editorial-intro__heading h2 {
-        font-size: 47px;
+        font-size: 24px;
         line-height: 1.08;
     }
 
@@ -6305,7 +6768,7 @@ p {
     }
 
     .jlc-editorial-intro__paragraph p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.8;
     }
 }
