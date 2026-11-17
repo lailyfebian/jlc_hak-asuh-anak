@@ -4668,7 +4668,7 @@ section {
     }
 
     .cta-section-2-title {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .cta-section-2-subtitle {
@@ -4694,6 +4694,23 @@ section {
     .cta-section-2-button {
         width: 100%;
         justify-content: center;
+    }
+
+    .cta-section-2-list-item {
+        padding-left: 15px;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        width: 100%;
+    }
+
+    .cta-section-2-list-item * {
+        text-align: left !important;
+    }
+
+    .cta-section-2-list-item span{
+        font-size: 13px;
     }
 }
 
