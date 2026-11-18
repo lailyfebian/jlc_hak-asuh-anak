@@ -932,7 +932,7 @@ section {
 }
 
 .feature-item .feature-subtitle {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 24px;
     font-weight: 900;
     margin-bottom: 10px;
@@ -940,6 +940,7 @@ section {
 }
 
 .feature-item p {
+    font-family: 'Inter', serif !important;
     font-size: 16px;
     line-height: 1.8;
     color: #707070;
@@ -1185,9 +1186,13 @@ section {
         font-size: 26px;
     }
 
-    .feature-subtitle {
+    .feature-item .feature-subtitle {
         font-size: 20px;
         font-weight: 900;
+    }
+
+    .feature-item p {
+        font-size: 13px;
     }
 }
 
@@ -1252,13 +1257,6 @@ section {
         padding: 25px 15px;
     }
 
-    .feature-item .feature-subtitle {
-        font-size: 16px;
-    }
-
-    .feature-item p {
-        font-size: 14px;
-    }
 }
 
 @media (max-width:390px) {
