@@ -1149,15 +1149,15 @@ section {
         padding: 140px 0 70px;
     }
 
-    .hero-content h1 {
+/*    .hero-content h1 {
         font-size: 44px !important;
-    }
+    }*/
 
-    .hero-content p {
+/*    .hero-content p {
         text-align: justify;
         font-size: 14px !important;
     }
-
+*/
     .hero-buttons {
         flex-direction: column;
         width: 100%;
@@ -6854,7 +6854,7 @@ section {
     color: #C89A3D;
     border: none;
     border-radius: 0;
-    font-size: 11px !important;
+    font-size: 12px !important;
     font-weight: 700;
     letter-spacing: 1.5px;
     line-height: 1.5;
@@ -6892,6 +6892,7 @@ section {
 }
 
 .list-kota-header .list-kota-intro {
+    font-family: 'Inter', serif !important;
     margin-top: 20px;
     margin-bottom: 0;
     color: #1B3A63;
