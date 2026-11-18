@@ -1015,11 +1015,11 @@ section {
         padding: 210px 0 150px;
     }
 
-    .hero-content h1 {
+/*    .hero-content h1 {
         font-size: 62px !important;
         max-width: 720px;
     }
-
+*/
     .hero-content p {
         max-width: 620px;
     }
@@ -1034,9 +1034,9 @@ section {
         max-width: 1180px;
     }
 
-    .hero-content h1 {
+/*    .hero-content h1 {
         font-size: 56px !important;
-    }
+    }*/
 }
 
 @media (max-width:1199px) {
@@ -1044,10 +1044,10 @@ section {
         padding: 170px 0 120px;
     }
 
-    .hero-content h1 {
+/*    .hero-content h1 {
         font-size: 46px !important;
     }
-
+*/
     .navbar-brand img {
         width: 60px;
     }
@@ -1107,10 +1107,10 @@ section {
         margin-bottom: 40px;
     }
 
-    .hero-content h1 {
+/*    .hero-content h1 {
         font-size: 42px !important;
         max-width: 100%;
-    }
+    }*/
 
     .hero-content p {
         margin: auto;
